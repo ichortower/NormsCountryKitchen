@@ -47,14 +47,15 @@
       "Target": "Data/animationDescriptions",
       "Action": "EditData",
       "Entries": {
-        "{{Norm}}_counter": "16/16/16//laying_down/offset -4 16"
+        "{{Norm}}_counter": "16/16/16//laying_down/offset -4 16",
+        "{{Norm}}_lean": "17/17/17//laying_down/offset 0 -28"
       }
     },
     {
       "Target": "Data/NPCGiftTastes",
       "Action": "EditData",
       "Entries": {
-        "{{Norm}}": "{{i18n:Norm.Gift.Love.Generic}}//{{i18n:Norm.Gift.Like.Generic}}//{{i18n:Norm.Gift.Dislike.Generic}}//{{i18n:Norm.Gift.Hate.Generic}}//{{i18n:Norm.Gift.Neutral.Generic}}//"
+        "{{Norm}}": "{{i18n:Norm.Gift.Love.Generic}}/222 224 232 303 342/{{i18n:Norm.Gift.Like.Generic}}/{{ModId}}_tag_item 245 246/{{i18n:Norm.Gift.Dislike.Generic}}//{{i18n:Norm.Gift.Hate.Generic}}//{{i18n:Norm.Gift.Neutral.Generic}}//"
       }
     },
     {
