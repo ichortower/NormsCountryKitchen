@@ -15,9 +15,61 @@
               "Id": "Beer",
               "ItemId": "(O)346"
             }
+          ],
+          "Owners": [
+            {
+              "Id": "Norm Fair",
+              "Name": "{{Norm}}",
+              "Condition": "IS_EVENT festival_fall16",
+              "Dialogues": [
+                {
+                  "Id": "Random",
+                  "RandomDialogue": [
+                    "{{i18n:Norm.FairShopDialogue.01}}",
+                    "{{i18n:Norm.FairShopDialogue.02}}",
+                    "{{i18n:Norm.FairShopDialogue.03}}"
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": "Norm Default",
+              "Name": "{{Norm}}",
+              "Dialogues": [
+                {
+                  "Id": "Random",
+                  "RandomDialogue": [
+                    "{{i18n:Norm.ShopDialogue.01}}",
+                    "{{i18n:Norm.ShopDialogue.02}}",
+                    "{{i18n:Norm.ShopDialogue.03}}",
+                    "{{i18n:Norm.ShopDialogue.04}}",
+                    "{{i18n:Norm.ShopDialogue.05}}"
+                  ]
+                }
+              ]
+            }
           ]
         }
       }
+    },
+    {
+      "Target": "Data/Shops",
+      "Action": "EditData",
+      "Fields": {
+        "{{ModId}}_NormTruck": {
+          "Currency": 1,
+          "PriceModifiers": [
+            {"Modification": "Multiply", "Amount": 0.5},
+            {"Modification": "Set", "Amount": 9999}
+          ],
+          "PriceModifierMode": "Minimum"
+        }
+      },
+      "When": {
+        "DayEvent": "stardew valley fair",
+        "LocationName": "Temp"
+      },
+      "Update": "OnLocationChange"
     },
     {
       "Target": "Maps/{{ModId}}_Tilesheet",
@@ -31,6 +83,15 @@
       "ToArea": {"X": "{{Town X}}", "Y": "{{Town Y}}", "Width": 7, "Height": 4},
       "PatchMode": "Overlay",
       "AddNpcWarps": [ "{{DoorTileX}} {{DoorTileY}} {{ModId}}_Void 0 0" ],
+      "MapTiles": [
+        {
+          "Layer": "Buildings",
+          "Position": {"X": "{{Query:{{Town X}} + 4}}", "Y": "{{Query:{{Town Y}} + 3}}"},
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 {{Query:{{Town X}} + 4}} {{Query:{{Town Y}} + 2}} 1 1"
+          }
+        }
+      ],
       "When": {
         "DayOfWeek": "Tuesday"
       }
@@ -38,14 +99,189 @@
     {
       "Target": "Maps/Town-Fair",
       "Action": "EditMap",
+      "MapTiles": [
+        {
+          "Position": {"X": 7, "Y": 30},
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 37
+        },
+        {
+          "Position": {"X": 8, "Y": 30},
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 37
+        },
+        {
+          "Position": {"X": 9, "Y": 30},
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 37
+        },
+        {
+          "Position": {"X": 10, "Y": 30},
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 37
+        },
+        {
+          "Position": {"X": 11, "Y": 30},
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 37
+        },
+        {
+          "Position": {"X": 12, "Y": 30},
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 37
+        },
+        {
+          "Position": {"X": 13, "Y": 30},
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 37
+        },
+        {
+          "Position": {"X": 14, "Y": 30},
+          "Layer": "Buildings",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 37
+        },
+
+        {
+          "Position": {"X": 7, "Y": 29},
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 5
+        },
+        {
+          "Position": {"X": 8, "Y": 29},
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 5
+        },
+        {
+          "Position": {"X": 9, "Y": 29},
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 5
+        },
+        {
+          "Position": {"X": 10, "Y": 29},
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 5
+        },
+        {
+          "Position": {"X": 11, "Y": 29},
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 5
+        },
+        {
+          "Position": {"X": 12, "Y": 29},
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 5
+        },
+        {
+          "Position": {"X": 13, "Y": 29},
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 5
+        },
+        {
+          "Position": {"X": 14, "Y": 29},
+          "Layer": "Front",
+          "SetTilesheet": "untitled tile sheet",
+          "SetIndex": 5
+        },
+
+        {
+          "Position": {"X": 18, "Y": 31},
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {"X": 18, "Y": 32},
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {"X": 18, "Y": 33},
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {"X": 18, "Y": 34},
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {"X": 18, "Y": 35},
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {"X": 18, "Y": 36},
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {"X": 18, "Y": 37},
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {"X": 18, "Y": 38},
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {"X": 18, "Y": 39},
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {"X": 18, "Y": 40},
+          "Layer": "Buildings",
+          "Remove": true
+        }
+      ]
+    },
+    {
+      "Target": "Maps/Town-Fair",
+      "Action": "EditMap",
       "FromFile": "assets/FoodTruck.tmx",
-      "ToArea": {
-        "X": 20,
-        "Y": 20,
-        "Width": 7,
-        "Height": 4
-      },
+      "ToArea": { "X": 13, "Y": 29, "Width": 7, "Height": 4 },
+      "MapTiles": [
+        {
+          "Layer": "Buildings",
+          "Position": {"X": 17, "Y": 32},
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 17 31 1 1"
+          }
+        }
+      ],
       "PatchMode": "Overlay"
+    },
+    {
+      "Target": "Data/Festivals/fall16",
+      "Action": "EditData",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters"],
+          "Value": "{{Norm}} 17 31 down",
+          "Delimiter": "/"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "set-up", 5],
+          "Value": "/positionOffset {{Norm}} 0 24/animate {{Norm}} false true 1000 16"
+        }
+      ]
     }
   ]
 }
