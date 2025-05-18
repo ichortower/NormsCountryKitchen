@@ -1,0 +1,39 @@
+{
+  "Changes": [
+    {
+      "Target": "Data/Shops",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_NormTruck": {
+          "Items": [
+            {
+              "Id": "AllItemsQuery",
+              "ItemId": "ALL_ITEMS (O) @requirePrice",
+              "PerItemCondition": "ITEM_ID_PREFIX Target {{ModId}}"
+            },
+            {
+              "Id": "Beer",
+              "ItemId": "(O)346"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Target": "Maps/{{ModId}}_Tilesheet",
+      "Action": "Load",
+      "FromFile": "assets/tilesheet.png"
+    },
+    {
+      "Target": "Maps/Town",
+      "Action": "EditMap",
+      "FromFile": "assets/FoodTruck.tmx",
+      "ToArea": {"X": 7, "Y": 68, "Width": 7, "Height": 4},
+      "PatchMode": "Overlay",
+      "AddNpcWarps": [ "8 71 {{ModId}}_Void 0 0" ],
+      "When": {
+        "DayOfWeek": "Tuesday"
+      }
+    }
+  ]
+}

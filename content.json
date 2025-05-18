@@ -1,0 +1,23 @@
+{
+  "Format": "2.6.0",
+  "DynamicTokens": [
+    {
+      "Name": "Norm",
+      "Value": "{{ModId}}_Norm"
+    }
+  ],
+  "Changes": [
+    {
+      "Action": "Include",
+      "FromFile": "data/norm.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/objects.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/shop.json"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "Name": "Norm's Country Kitchen",
+  "Author": "ichortower",
+  "Description": "Adds a traveling food vendor who comes to Pelican Town once per week.",
+  "Version": "1.0.0",
+  "UniqueID": "ichortower.NCK",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "UpdateKeys": ["Nexus:34041", "Github:ichortower/NormsCountryKitchen"],
+  "Dependencies": []
+}

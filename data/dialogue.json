@@ -1,0 +1,20 @@
+{
+  "Changes": [
+    {
+      "Target": "Characters/Dialogue/{{Norm}}",
+      "Action": "EditData",
+      "Entries": {
+        "Introduction": "{{i18n:Norm.Introduction}}",
+        "Mon": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}",
+        "Schedule.EarlyMorning": "{{i18n:Norm.Schedule.EarlyMorning}}",
+        "Schedule.OnTheJob": "{{i18n:Norm.Schedule.OnTheJob}}",
+        "Tue": "{{i18n:Norm.Dialogue.Tue}}",
+        "Wed": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}",
+        "Thu": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}",
+        "Fri": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}",
+        "Sat": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}",
+        "Sun": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}"
+      }
+    }
+  ]
+}

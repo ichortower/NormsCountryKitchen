@@ -1,0 +1,94 @@
+{
+  "Changes": [
+    {
+      "Target": "Data/Characters",
+      "Action": "EditData",
+      "Entries": {
+        "{{Norm}}": {
+          "DisplayName": "[LocalizedText Strings\\NPCNames:{{Norm}}]",
+          "BirthSeason": "Summer",
+          "BirthDay": 2,
+          "HomeRegion": "Other",
+          "Language": "Default",
+          "Gender": "Male",
+          "Breather": true,
+          "Age": "Adult",
+          "CanSocialize": true,
+          "CanVisitIsland": "FALSE",
+          "SocialTab": "HiddenUntilMet",
+          "CanBeRomanced": false,
+          "IntroductionsQuest": false,
+          "ItemDeliveryQuests": "FALSE",
+          "PerfectionScore": false,
+          "EndSlideShow": "Hidden",
+          "UnlockConditions": "DAYS_PLAYED 5",
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "{{ModId}}_Void",
+              "Tile": { "X": 0, "Y": 0 },
+              "Direction": "down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Target": "Characters/{{Norm}}",
+      "Action": "Load",
+      "FromFile": "assets/norm-spritesheet.png"
+    },
+    {
+      "Target": "Portraits/{{Norm}}",
+      "Action": "Load",
+      "FromFile": "assets/norm-portraits.png"
+    },
+    {
+      "Target": "Data/animationDescriptions",
+      "Action": "EditData",
+      "Entries": {
+        "{{Norm}}_counter": "16/16/16//laying_down/offset -4 16"
+      }
+    },
+    {
+      "Target": "Data/NPCGiftTastes",
+      "Action": "EditData",
+      "Entries": {
+        "{{Norm}}": "{{i18n:Norm.Gift.Love.Generic}}//{{i18n:Norm.Gift.Like.Generic}}//{{i18n:Norm.Gift.Dislike.Generic}}//{{i18n:Norm.Gift.Hate.Generic}}//{{i18n:Norm.Gift.Neutral.Generic}}//"
+      }
+    },
+    {
+      "Target": "Strings/NPCNames",
+      "Action": "EditData",
+      "Entries": {
+        "{{Norm}}": "Norm"
+      }
+    },
+    {
+      "Target": "Characters/schedules/{{Norm}}, Characters/Dialogue/{{Norm}}",
+      "Action": "Load",
+      "FromFile": "data/blank.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/schedule.json, data/dialogue.json"
+    },
+    {
+      "Target": "Data/Locations",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_Void": {
+          "DisplayName": "{{i18n:VoidRoom.Name}}",
+          "CreateOnLoad": {
+            "MapPath": "Maps/{{ModId}}_Void"
+          }
+        }
+      }
+    },
+    {
+      "Target": "Maps/{{ModId}}_Void",
+      "Action": "Load",
+      "FromFile": "assets/void.tmx"
+    }
+  ]
+}

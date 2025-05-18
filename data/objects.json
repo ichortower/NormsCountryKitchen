@@ -1,0 +1,250 @@
+{
+  "Changes": [
+    {
+      "Target": "Data/Objects",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_SoftPretzel": {
+          "Name": "{{ModId}}_SoftPretzel",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_SoftPretzel_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_SoftPretzel_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 0,
+          "Price": 75,
+          "Edibility": 30,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "allergen_gluten",
+            "color_brown",
+            "food_bakery",
+            "pretzel_item"
+          ]
+        },
+        "{{ModId}}_AppleButter": {
+          "Name": "{{ModId}}_AppleButter",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_AppleButter_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_AppleButter_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 1,
+          "Price": 125,
+          "Edibility": 25,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "color_brown",
+            "food_sauce",
+            "food_sweet"
+          ]
+        },
+        "{{ModId}}_Scrapple": {
+          "Name": "{{ModId}}_Scrapple",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_Scrapple_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_Scrapple_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 2,
+          "Price": 90,
+          "Edibility": 33,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "allergen_gluten",
+            "allergen_meat",
+            "color_brown",
+            "food_breakfast",
+            "food_nonvegetarian",
+            "food_tref"
+          ]
+        },
+        "{{ModId}}_ChickenPotPie": {
+          "Name": "{{ModId}}_ChickenPotPie",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_ChickenPotPie_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_ChickenPotPie_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 3,
+          "Price": 220,
+          "Edibility": 70,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "allergen_egg",
+            "allergen_gluten",
+            "allergen_meat",
+            "color_brown",
+            "food_nonvegetarian",
+            "food_soup"
+          ]
+        },
+        "{{ModId}}_WhoopiePie": {
+          "Name": "{{ModId}}_WhoopiePie",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_WhoopiePie_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_WhoopiePie_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 4,
+          "Price": 95,
+          "Edibility": 30,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "allergen_dairy",
+            "allergen_gluten",
+            "color_black",
+            "food_bakery",
+            "food_cake",
+            "food_sweet"
+          ]
+        },
+        "{{ModId}}_ShooflyPie": {
+          "Name": "{{ModId}}_ShooflyPie",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_ShooflyPie_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_ShooflyPie_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 5,
+          "Price": 250,
+          "Edibility": 80,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "allergen_dairy",
+            "allergen_gluten",
+            "color_brown",
+            "food_bakery",
+            "food_cake",
+            "food_sweet",
+            "food_pie"
+          ]
+        },
+        "{{ModId}}_FunnelCake": {
+          "Name": "{{ModId}}_FunnelCake",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_FunnelCake_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_FunnelCake_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 6,
+          "Price": 110,
+          "Edibility": 36,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "allergen_gluten",
+            "color_brown",
+            "food_fried",
+            "food_sweet"
+          ]
+        },
+        "{{ModId}}_Fasnacht": {
+          "Name": "{{ModId}}_Fasnacht",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_Fasnacht_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_Fasnacht_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 7,
+          "Price": 70,
+          "Edibility": 25,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "allergen_gluten",
+            "allergen_meat",
+            "color_brown",
+            "food_bakery",
+            "food_fried",
+            "food_sweet"
+          ]
+        },
+        "{{ModId}}_AppleDumpling": {
+          "Name": "{{ModId}}_AppleDumpling",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_AppleDumpling_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_AppleDumpling_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 8,
+          "Price": 130,
+          "Edibility": 40,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "allergen_gluten",
+            "allergen_dairy",
+            "food_bakery",
+            "food_sweet"
+          ]
+        },
+        "{{ModId}}_BirchBeer": {
+          "Name": "{{ModId}}_BirchBeer",
+          "DisplayName": "[LocalizedText Strings\\Objects:{{ModId}}_BirchBeer_Name]",
+          "Description": "[LocalizedText Strings\\Objects:{{ModId}}_BirchBeer_Description]",
+          "Type": "Basic",
+          "Category": -25,
+          "Texture": "Mods/{{ModId}}_ItemTexture",
+          "SpriteIndex": 9,
+          "Price": 120,
+          "Edibility": 20,
+          "IsDrink": true,
+          "ContextTags": [
+            "{{ModId}}_tag_item",
+            "color_brown",
+            "drink_item",
+            "food_sweet",
+            "soda_item"
+          ]
+        }
+      }
+    },
+    {
+      "Target": "Strings/Objects",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_SoftPretzel_Name": "{{i18n:SoftPretzel.Name}}",
+        "{{ModId}}_SoftPretzel_Description": "{{i18n:SoftPretzel.Description}}",
+        "{{ModId}}_AppleButter_Name": "{{i18n:AppleButter.Name}}",
+        "{{ModId}}_AppleButter_Description": "{{i18n:AppleButter.Description}}",
+        "{{ModId}}_Scrapple_Name": "{{i18n:Scrapple.Name}}",
+        "{{ModId}}_Scrapple_Description": "{{i18n:Scrapple.Description}}",
+        "{{ModId}}_ChickenPotPie_Name": "{{i18n:ChickenPotPie.Name}}",
+        "{{ModId}}_ChickenPotPie_Description": "{{i18n:ChickenPotPie.Description}}",
+        "{{ModId}}_WhoopiePie_Name": "{{i18n:WhoopiePie.Name}}",
+        "{{ModId}}_WhoopiePie_Description": "{{i18n:WhoopiePie.Description}}",
+        "{{ModId}}_ShooflyPie_Name": "{{i18n:ShooflyPie.Name}}",
+        "{{ModId}}_ShooflyPie_Description": "{{i18n:ShooflyPie.Description}}",
+        "{{ModId}}_FunnelCake_Name": "{{i18n:FunnelCake.Name}}",
+        "{{ModId}}_FunnelCake_Description": "{{i18n:FunnelCake.Description}}",
+        "{{ModId}}_Fasnacht_Name": "{{i18n:Fasnacht.Name}}",
+        "{{ModId}}_Fasnacht_Description": "{{i18n:Fasnacht.Description}}",
+        "{{ModId}}_AppleDumpling_Name": "{{i18n:AppleDumpling.Name}}",
+        "{{ModId}}_AppleDumpling_Description": "{{i18n:AppleDumpling.Description}}",
+        "{{ModId}}_BirchBeer_Name": "{{i18n:BirchBeer.Name}}",
+        "{{ModId}}_BirchBeer_Description": "{{i18n:BirchBeer.Description}}"
+      }
+    },
+    {
+      "Target": "Mods/{{ModId}}_ItemTexture",
+      "Action": "Load",
+      "FromFile": "assets/object-spritesheet.png"
+    },
+    {
+      "Target": "Data/NPCGiftTastes",
+      "Action": "EditData",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Universal_Like"],
+          "Value": "{{ModId}}_tag_item",
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Universal_Hate"],
+          "Value": "{{ModId}}_Scrapple",
+          "Delimiter": " "
+        }
+      ]
+    }
+  ]
+}
