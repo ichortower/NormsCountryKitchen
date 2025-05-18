@@ -4,6 +4,38 @@
     {
       "Name": "Norm",
       "Value": "{{ModId}}_Norm"
+    },
+    {
+      "Name": "Town X",
+      "Value": 7
+    },
+    {
+      "Name": "Town Y",
+      "Value": 68
+    },
+    {
+      "Name": "DoorTileX",
+      "Value": "{{Query: {{Town X}} + 1}}"
+    },
+    {
+      "Name": "DoorTileY",
+      "Value": "{{Query: {{Town Y}} + 3}}"
+    },
+    {
+      "Name": "InsideTileX",
+      "Value": "{{Query: {{Town X}} + 4}}"
+    },
+    {
+      "Name": "InsideTileY",
+      "Value": "{{Query: {{Town Y}} + 2}}"
+    },
+    {
+      "Name": "RearTileX",
+      "Value": "{{Query: {{Town X}} + 6}}"
+    },
+    {
+      "Name": "RearTileY",
+      "Value": "{{Query: {{Town Y}} + 4}}"
     }
   ],
   "Changes": [

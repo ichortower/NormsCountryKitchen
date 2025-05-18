@@ -28,12 +28,24 @@
       "Target": "Maps/Town",
       "Action": "EditMap",
       "FromFile": "assets/FoodTruck.tmx",
-      "ToArea": {"X": 7, "Y": 68, "Width": 7, "Height": 4},
+      "ToArea": {"X": "{{Town X}}", "Y": "{{Town Y}}", "Width": 7, "Height": 4},
       "PatchMode": "Overlay",
-      "AddNpcWarps": [ "8 71 {{ModId}}_Void 0 0" ],
+      "AddNpcWarps": [ "{{DoorTileX}} {{DoorTileY}} {{ModId}}_Void 0 0" ],
       "When": {
         "DayOfWeek": "Tuesday"
       }
+    },
+    {
+      "Target": "Maps/Town-Fair",
+      "Action": "EditMap",
+      "FromFile": "assets/FoodTruck.tmx",
+      "ToArea": {
+        "X": 20,
+        "Y": 20,
+        "Width": 7,
+        "Height": 4
+      },
+      "PatchMode": "Overlay"
     }
   ]
 }

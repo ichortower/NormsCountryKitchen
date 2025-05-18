@@ -5,11 +5,12 @@
       "Action": "EditData",
       "Entries": {
         "spring": "0 {{ModId}}_Void 0 0",
-        "Tue": "0 Town 8 72 2/
-          610 8 72 2 \"Characters\\Dialogue\\{{Norm}}:Schedule.EarlyMorning\"/
-          800 11 70 2 {{Norm}}_counter \"Characters\\Dialogue\\{{Norm}}:Schedule.OnTheJob\"/
+        "Tue": "0 Town {{DoorTileX}} {{Query:{{DoorTileY}}+1}} 2/
+          610 {{DoorTileX}} {{Query:{{DoorTileY}}+1}} 2 \"Characters\\Dialogue\\{{Norm}}:Schedule.EarlyMorning\"/
+          800 {{InsideTileX}} {{InsideTileY}} 2 {{Norm}}_counter \"Characters\\Dialogue\\{{Norm}}:Schedule.OnTheJob\"/
           1700 Saloon 11 20 0/
-          2140 bed"
+          2130 Town {{RearTileX}} {{RearTileY}} 2 \"Characters\\Dialogue\\{{Norm}}:Schedule.GoodNight\"/
+          2300 bed"
       }
     }
   ]
