@@ -43,7 +43,8 @@
                     "{{i18n:Norm.ShopDialogue.02}}",
                     "{{i18n:Norm.ShopDialogue.03}}",
                     "{{i18n:Norm.ShopDialogue.04}}",
-                    "{{i18n:Norm.ShopDialogue.05}}"
+                    "{{i18n:Norm.ShopDialogue.05}}",
+                    "{{i18n:Norm.ShopDialogue.06}}"
                   ]
                 }
               ]
@@ -80,15 +81,15 @@
       "Target": "Maps/Town",
       "Action": "EditMap",
       "FromFile": "assets/FoodTruck.tmx",
-      "ToArea": {"X": "{{Town X}}", "Y": "{{Town Y}}", "Width": 7, "Height": 4},
+      "ToArea": {"X": "{{Town X}}", "Y": "{{Town Y}}", "Width": 7, "Height": 5},
       "PatchMode": "Overlay",
       "AddNpcWarps": [ "{{DoorTileX}} {{DoorTileY}} {{ModId}}_Void 0 0" ],
       "MapTiles": [
         {
           "Layer": "Buildings",
-          "Position": {"X": "{{Query:{{Town X}} + 4}}", "Y": "{{Query:{{Town Y}} + 3}}"},
+          "Position": {"X": "{{Query:{{Town X}} + 4}}", "Y": "{{Query:{{Town Y}} + 4}}"},
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 {{Query:{{Town X}} + 4}} {{Query:{{Town Y}} + 2}} 1 1"
+            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 {{Query:{{Town X}} + 4}} {{Query:{{Town Y}} + 3}} 1 1"
           }
         }
       ],

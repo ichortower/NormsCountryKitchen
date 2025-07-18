@@ -55,7 +55,7 @@
       "Target": "Data/NPCGiftTastes",
       "Action": "EditData",
       "Entries": {
-        "{{Norm}}": "{{i18n:Norm.Gift.Love.Generic}}/222 224 232 303 342/{{i18n:Norm.Gift.Like.Generic}}/{{ModId}}_tag_item 245 246/{{i18n:Norm.Gift.Dislike.Generic}}//{{i18n:Norm.Gift.Hate.Generic}}//{{i18n:Norm.Gift.Neutral.Generic}}//"
+        "{{Norm}}": "{{i18n:Norm.Gift.Love.Generic}}/222 224 232 303 342 FlashShifter.StardewValleyExpandedCP_Birch_Water/{{i18n:Norm.Gift.Like.Generic}}/{{ModId}}_tag_item 245 246 247 FlashShifter.StardewValleyExpandedCP_Birch_Syrup/{{i18n:Norm.Gift.Dislike.Generic}}//{{i18n:Norm.Gift.Hate.Generic}}//{{i18n:Norm.Gift.Neutral.Generic}}//"
       }
     },
     {

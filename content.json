@@ -11,7 +11,7 @@
     },
     {
       "Name": "Town Y",
-      "Value": 68
+      "Value": 67
     },
     {
       "Name": "DoorTileX",
@@ -19,7 +19,7 @@
     },
     {
       "Name": "DoorTileY",
-      "Value": "{{Query: {{Town Y}} + 3}}"
+      "Value": "{{Query: {{Town Y}} + 4}}"
     },
     {
       "Name": "InsideTileX",
@@ -27,7 +27,7 @@
     },
     {
       "Name": "InsideTileY",
-      "Value": "{{Query: {{Town Y}} + 2}}"
+      "Value": "{{Query: {{Town Y}} + 3}}"
     },
     {
       "Name": "RearTileX",
@@ -35,7 +35,11 @@
     },
     {
       "Name": "RearTileY",
-      "Value": "{{Query: {{Town Y}} + 4}}"
+      "Value": "{{Query: {{Town Y}} + 5}}"
+    },
+    {
+      "Name": "RandomGifts",
+      "Value": "[{{ModId}}_SoftPretzel {{ModId}}_WhoopiePie {{ModId}}_BirchBeer]"
     }
   ],
   "Changes": [
