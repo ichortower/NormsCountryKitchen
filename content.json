@@ -5,6 +5,8 @@
       "Name": "Norm",
       "Value": "{{ModId}}_Norm"
     },
+    // where the truck parks in Town. it's a rectangle so this coordinate is top-left,
+    // off above the truck's actual tiles
     {
       "Name": "Town X",
       "Value": 7
@@ -12,6 +14,19 @@
     {
       "Name": "Town Y",
       "Value": 67
+    },
+    // where norm goes after closing up. at first it's just to the saloon, but he adds
+    // a few spots at 4 hearts and chooses one at random
+    {
+      "Name": "FreeTimeSpot",
+      "Value": "Saloon 11 20 0"
+    },
+    {
+      "Name": "FreeTimeSpot",
+      "Value": "{{Random: Saloon 11 20 0, Town 22 26 1, Beach 22 24 2, Forest 93 39 2}}",
+      "When": {
+        "Hearts:{{Norm}}": "4, 5, 6, 7, 8, 9, 10"
+      }
     },
     {
       "Name": "DoorTileX",

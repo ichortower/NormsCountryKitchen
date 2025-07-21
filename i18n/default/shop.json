@@ -5,7 +5,8 @@
   "Norm.ShopDialogue.03": "Don't forget to buy a nice, cold drink, too!",
   "Norm.ShopDialogue.04": "Can I interest you in any of my delicious pies?",
   "Norm.ShopDialogue.05": "Pick whatever you like. Everything's delicious.",
-  "Norm.ShopDialogue.06": "I know just what you need: scrapple!",
+  "Norm.ShopDialogue.06": "I know just what you need: [ArticleFor [SuggestedItem]] [SuggestedItem]!",
+  "Norm.ShopDialogue.07": "The best things in life are edible.",
 
   "Norm.FairShopDialogue.01": "I take star tokens as a condition for serving food here. I cash 'em out later.",
   "Norm.FairShopDialogue.02": "Nothing like a warm pretzel on a cool autumn day.",

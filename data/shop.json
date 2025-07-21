@@ -25,6 +25,13 @@
                 {
                   "Id": "Random",
                   "RandomDialogue": [
+                    "{{i18n:Norm.ShopDialogue.01}}",
+                    "{{i18n:Norm.ShopDialogue.02}}",
+                    "{{i18n:Norm.ShopDialogue.03}}",
+                    "{{i18n:Norm.ShopDialogue.04}}",
+                    "{{i18n:Norm.ShopDialogue.05}}",
+                    "{{i18n:Norm.ShopDialogue.06}}",
+                    "{{i18n:Norm.ShopDialogue.07}}",
                     "{{i18n:Norm.FairShopDialogue.01}}",
                     "{{i18n:Norm.FairShopDialogue.02}}",
                     "{{i18n:Norm.FairShopDialogue.03}}"
@@ -44,7 +51,8 @@
                     "{{i18n:Norm.ShopDialogue.03}}",
                     "{{i18n:Norm.ShopDialogue.04}}",
                     "{{i18n:Norm.ShopDialogue.05}}",
-                    "{{i18n:Norm.ShopDialogue.06}}"
+                    "{{i18n:Norm.ShopDialogue.06}}",
+                    "{{i18n:Norm.ShopDialogue.07}}"
                   ]
                 }
               ]
