@@ -30,18 +30,6 @@
             "Maximum": 14.0
           },
           "TilePosition": { "X": "{{ShopTileX}}", "Y": "{{ShopTileY}}" }
-        },
-        "{{ModId}}_PA_FestivalShop": {
-          "Condition": "IS_EVENT festival_fall16",
-          "CueName": "{{ModId}}_ShopMusic",
-          "LocationName": "Temp",
-          "MinimumBgmVolume": 0.0,
-          "Radius": {
-            "Floor": 1.0,
-            "Shelf": 3.0,
-            "Maximum": 14.0
-          },
-          "TilePosition": { "X": 17, "Y": 31 }
         }
       }
     }

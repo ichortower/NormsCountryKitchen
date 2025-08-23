@@ -62,25 +62,6 @@
       }
     },
     {
-      "Target": "Data/Shops",
-      "Action": "EditData",
-      "Fields": {
-        "{{ModId}}_NormTruck": {
-          "Currency": 1,
-          "PriceModifiers": [
-            {"Modification": "Multiply", "Amount": 0.5},
-            {"Modification": "Set", "Amount": 9999}
-          ],
-          "PriceModifierMode": "Minimum"
-        }
-      },
-      "When": {
-        "DayEvent": "stardew valley fair",
-        "LocationName": "Temp"
-      },
-      "Update": "OnLocationChange"
-    },
-    {
       "Target": "Maps/{{ModId}}_Tilesheet",
       "Action": "Load",
       "FromFile": "assets/tilesheet.png"
@@ -95,9 +76,9 @@
       "MapTiles": [
         {
           "Layer": "Buildings",
-          "Position": {"X": "{{Query:{{Town X}} + 4}}", "Y": "{{Query:{{Town Y}} + 4}}"},
+          "Position": {"X": "{{Round:{{ShopTileX}}}}", "Y": "{{Round:{{ShopTileY}}}}"},
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 {{Query:{{Town X}} + 4}} {{Query:{{Town Y}} + 3}} 1 1"
+            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 {{InsideTileX}} {{InsideTileY}} 1 1"
           }
         }
       ],
@@ -263,7 +244,7 @@
       "Target": "Maps/Town-Fair",
       "Action": "EditMap",
       "FromFile": "assets/FoodTruck.tmx",
-      "ToArea": { "X": 13, "Y": 29, "Width": 7, "Height": 4 },
+      "ToArea": { "X": 13, "Y": 28, "Width": 7, "Height": 5 },
       "MapTiles": [
         {
           "Layer": "Buildings",
@@ -278,6 +259,10 @@
     {
       "Target": "Data/Festivals/fall16",
       "Action": "EditData",
+      "Entries": {
+        "{{Norm}}": "{{i18n:Norm.Festival.y1}}",
+        "{{Norm}}_y2": "{{i18n:Norm.Festival.y2}}"
+      },
       "TextOperations": [
         {
           "Operation": "Append",
