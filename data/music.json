@@ -1,0 +1,49 @@
+{
+  "Changes": [
+    {
+      "Target": "Data/AudioChanges",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_ShopMusic": {
+          "Id": "{{ModId}}_ShopMusic",
+          "FilePaths": [
+            "{{AbsoluteFilePath: assets/radio_1.ogg}}"
+          ],
+          "Category": "Music",
+          "StreamedVorbis": true,
+          "Looped": true
+        }
+      }
+    },
+    {
+      "Target": "Mods/ichortower.PositionalAudio/Data",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_PA_NormalShop": {
+          "Condition": "ichortower.PositionalAudio_NPC_ANIMATING {{Norm}} Here {{Norm}}_counter",
+          "CueName": "{{ModId}}_ShopMusic",
+          "LocationName": "Town",
+          "MinimumBgmVolume": 0.0,
+          "Radius": {
+            "Floor": 1.0,
+            "Shelf": 3.0,
+            "Maximum": 14.0
+          },
+          "TilePosition": { "X": "{{ShopTileX}}", "Y": "{{ShopTileY}}" }
+        },
+        "{{ModId}}_PA_FestivalShop": {
+          "Condition": "IS_EVENT festival_fall16",
+          "CueName": "{{ModId}}_ShopMusic",
+          "LocationName": "Temp",
+          "MinimumBgmVolume": 0.0,
+          "Radius": {
+            "Floor": 1.0,
+            "Shelf": 3.0,
+            "Maximum": 14.0
+          },
+          "TilePosition": { "X": 17, "Y": 31 }
+        }
+      }
+    }
+  ]
+}

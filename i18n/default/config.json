@@ -1,0 +1,4 @@
+{
+  "config.PlayMusic.name": "Play Music",
+  "config.PlayMusic.description": "Have Norm play music when his food truck is open. Requires Positional Audio to work."
+}

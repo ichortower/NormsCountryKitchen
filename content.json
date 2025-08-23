@@ -1,5 +1,11 @@
 {
   "Format": "2.6.0",
+  "ConfigSchema": {
+    "PlayMusic": {
+      "AllowValues": "true, false",
+      "Default": true
+    }
+  },
   "DynamicTokens": [
     {
       "Name": "Norm",
@@ -13,7 +19,7 @@
     },
     {
       "Name": "Town Y",
-      "Value": 67
+      "Value": 65
     },
     // where norm goes after closing up. at first it's just to the saloon, but he adds
     // a few spots at 4 hearts and chooses one at random
@@ -45,6 +51,14 @@
       "Value": "{{Query: {{Town Y}} + 3}}"
     },
     {
+      "Name": "ShopTileX",
+      "Value": "{{InsideTileX}}"
+    },
+    {
+      "Name": "ShopTileY",
+      "Value": "{{DoorTileY}}"
+    },
+    {
       "Name": "RearTileX",
       "Value": "{{Query: {{Town X}} + 6}}"
     },
@@ -69,6 +83,13 @@
     {
       "Action": "Include",
       "FromFile": "data/shop.json"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/music.json",
+      "When": {
+        "PlayMusic": true
+      }
     }
   ]
 }
