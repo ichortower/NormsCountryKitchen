@@ -31,6 +31,18 @@
           },
           "TilePosition": { "X": "{{ShopTileX}}", "Y": "{{ShopTileY}}" }
         }
+      },
+      "When": {
+        "HasFlag: hostPlayer |contains={{ModId}}_MailNotice": true
+      }
+    },
+    {
+      "Target": "Data/JukeboxTracks",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_ShopMusic": {
+          "Name": "{{i18n:ShopMusic.Title}}"
+        }
       }
     }
   ]

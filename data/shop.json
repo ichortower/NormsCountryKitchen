@@ -239,7 +239,10 @@
           "Layer": "Buildings",
           "Remove": true
         }
-      ]
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
     },
     {
       "Target": "Maps/Town-Fair",
