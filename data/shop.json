@@ -83,7 +83,8 @@
         }
       ],
       "When": {
-        "DayOfWeek": "Tuesday"
+        "DayOfWeek": "Tuesday",
+        "HasFlag: hostPlayer |contains={{ModId}}_MailNotice": true
       }
     },
     {

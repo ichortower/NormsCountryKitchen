@@ -24,7 +24,44 @@
         "Thu": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}",
         "Fri": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}",
         "Sat": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}",
-        "Sun": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}"
+        "Sun": "{{i18n:Norm.Dialogue.ShouldntSeeThis}}",
+
+        "{{ModId}}_CT_SpotQuestion": "{{i18n:Norm.SpotQuestion.1}}#$q -1 null#{{i18n:Norm.SpotQuestion.2}}#$r {{ModId}}_QTown 0 SpotQuestion_Answer1#{{i18n:Norm.SpotQuestion.a}}#$r {{ModId}}_QForest 0 SpotQuestion_Answer2#{{i18n:Norm.SpotQuestion.b}}#$r {{ModId}}_QBeach 0 SpotQuestion_Answer3#{{i18n:Norm.SpotQuestion.c}}",
+        // it stinks that these have to be distinct copies. dialogue parsing bug!
+        // TODO this bug will be fixed in 1.6.16, so fix the data then
+        "SpotQuestion_Answer1": "{{i18n:Norm.SpotQuestion.3}}",
+        "SpotQuestion_Answer2": "{{i18n:Norm.SpotQuestion.3}}",
+        "SpotQuestion_Answer3": "{{i18n:Norm.SpotQuestion.3}}",
+        "ichortower.HatMouseLacey_CT_VisitedNorms": "{{i18n:Norm.Lacey.Gossip}}"
+      }
+    },
+    {
+      "Target": "Data/mail",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_MailNotice": "{{i18n:Mail.NoticeOfArrival}}"
+      }
+    },
+    {
+      "Target": "Data/TriggerActions",
+      "Action": "EditData",
+      "Entries": {
+        "{{ModId}}_TA_SpotQuestion": {
+          "Id": "{{ModId}}_TA_SpotQuestion",
+          "Trigger": "DayStarted",
+          "Condition": "DAY_OF_WEEK Tuesday, PLAYER_HEARTS Host {{Norm}} 4",
+          "Actions": [
+            "AddConversationTopic {{ModId}}_CT_SpotQuestion 22"
+          ]
+        },
+        "{{ModId}}_TA_SendInitialMail": {
+          "Id": "{{ModId}}_TA_SendInitialMail",
+          "Trigger": "DayStarted",
+          "Condition": "DAY_OF_WEEK Monday, DAYS_PLAYED 10",
+          "Actions": [
+            "AddMail All {{ModId}}_MailNotice now"
+          ]
+        }
       }
     }
   ]

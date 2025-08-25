@@ -22,17 +22,43 @@
       "Value": 65
     },
     // where norm goes after closing up. at first it's just to the saloon, but he adds
-    // a few spots at 4 hearts and chooses one at random
+    // a few spots at 4 hearts and chooses one at random.
+    // after he asks you where you like to go, he adds one additional spot there to the pool.
     {
-      "Name": "FreeTimeSpot",
+      "Name": "FreeTimeString",
       "Value": "Saloon 11 20 0"
     },
     {
-      "Name": "FreeTimeSpot",
-      "Value": "{{Random: Saloon 11 20 0, Town 22 26 1, Beach 22 24 2, Forest 93 39 2}}",
+      "Name": "FreeTimeString",
+      "Value": "Saloon 11 20 0, Town 22 26 1, Beach 22 24 2, Forest 93 39 2",
       "When": {
         "Hearts:{{Norm}}": "4, 5, 6, 7, 8, 9, 10"
       }
+    },
+    {
+      "Name": "FreeTimeString",
+      "Value": "{{FreeTimeString}}, Town 78 95 2",
+      "When": {
+        "HasDialogueAnswer |contains={{ModId}}_QTown": true
+      }
+    },
+    {
+      "Name": "FreeTimeString",
+      "Value": "{{FreeTimeString}}, Forest 51 32 3",
+      "When": {
+        "HasDialogueAnswer |contains={{ModId}}_QForest": true
+      }
+    },
+    {
+      "Name": "FreeTimeString",
+      "Value": "{{FreeTimeString}}, Beach 55 22 2",
+      "When": {
+        "HasDialogueAnswer |contains={{ModId}}_QBeach": true
+      }
+    },
+    {
+      "Name": "FreeTimeSpot",
+      "Value": "{{Random: {{FreeTimeString}}}}"
     },
     {
       "Name": "DoorTileX",

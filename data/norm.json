@@ -21,7 +21,7 @@
           "ItemDeliveryQuests": "FALSE",
           "PerfectionScore": false,
           "EndSlideShow": "Hidden",
-          "UnlockConditions": "DAYS_PLAYED 5",
+          "UnlockConditions": "PLAYER_HAS_MAIL Host {{ModId}}_MailNotice Any",
           "Home": [
             {
               "Id": "Default",
