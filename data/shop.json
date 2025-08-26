@@ -261,6 +261,44 @@
       "PatchMode": "Overlay"
     },
     {
+      "Target": "Maps/Town-Fair2",
+      "Action": "EditMap",
+      "FromFile": "assets/FoodTruck.tmx",
+      "ToArea": { "X": 49, "Y": 50, "Width": 7, "Height": 5 },
+      "MapTiles": [
+        {
+          "Layer": "Buildings",
+          "Position": {"X": 53, "Y": 54},
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 53 53 1 1"
+          }
+        }
+      ],
+      "PatchMode": "Overlay",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      "Target": "Maps/Town-Fair2",
+      "Action": "EditMap",
+      "FromFile": "assets/FoodTruck.tmx",
+      "ToArea": { "X": 48, "Y": 49, "Width": 7, "Height": 5 },
+      "MapTiles": [
+        {
+          "Layer": "Buildings",
+          "Position": {"X": 52, "Y": 53},
+          "SetProperties": {
+            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 52 52 1 1"
+          }
+        }
+      ],
+      "PatchMode": "Overlay",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
       "Target": "Data/Festivals/fall16",
       "Action": "EditData",
       "Entries": {
@@ -278,8 +316,43 @@
           "Operation": "Append",
           "Target": ["Fields", "set-up", 5],
           "Value": "/positionOffset {{Norm}} 0 24/animate {{Norm}} false true 1000 16"
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "set-up_y2", 5],
+          "Value": "/positionOffset {{Norm}} 0 24/animate {{Norm}} false true 1000 16"
         }
       ]
+    },
+    {
+      "Target": "Data/Festivals/fall16",
+      "Action": "EditData",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "{{Norm}} 53 53 down",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      "Target": "Data/Festivals/fall16",
+      "Action": "EditData",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
+          "Value": "{{Norm}} 52 52 down",
+          "Delimiter": "/"
+        }
+      ],
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
     }
   ]
 }
