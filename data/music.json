@@ -22,7 +22,7 @@
         "{{ModId}}_PA_NormalShop": {
           "Condition": "ichortower.PositionalAudio_NPC_ANIMATING {{Norm}} Here {{Norm}}_counter",
           "CueName": "{{ModId}}_ShopMusic",
-          "LocationName": "Town",
+          "Location": "Town",
           "MinimumBgmVolume": 0.0,
           "Radius": {
             "Floor": 1.0,

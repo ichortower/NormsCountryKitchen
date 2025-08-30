@@ -7,7 +7,7 @@
         "spring": "0 {{ModId}}_Void 0 0",
         "Tue": "0 Town {{Query: {{DoorTileX}}+1}} {{Query:{{DoorTileY}}+1}} 2/
           610 {{Query: {{DoorTileX}}+1}} {{Query:{{DoorTileY}}+1}} 2 {{Norm}}_lean \"Characters\\Dialogue\\{{Norm}}:Schedule.EarlyMorning\"/
-          800 {{InsideTileX}} {{InsideTileY}} 2 {{Norm}}_counter \"Characters\\Dialogue\\{{Norm}}:Schedule.OnTheJob\"/
+          750 {{InsideTileX}} {{InsideTileY}} 2 {{Norm}}_counter \"Characters\\Dialogue\\{{Norm}}:Schedule.OnTheJob\"/
           1700 {{FreeTimeSpot}}/
           2130 Town {{RearTileX}} {{RearTileY}} 2 {{Norm}}_lean \"Characters\\Dialogue\\{{Norm}}:Schedule.GoodNight\"/
           2300 bed"

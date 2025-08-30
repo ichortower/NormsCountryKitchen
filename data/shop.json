@@ -78,7 +78,7 @@
           "Layer": "Buildings",
           "Position": {"X": "{{Round:{{ShopTileX}}}}", "Y": "{{Round:{{ShopTileY}}}}"},
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 {{InsideTileX}} {{InsideTileY}} 1 1"
+            "Action": "OpenShop {{ModId}}_NormTruck down -1 -1 {{InsideTileX}} {{InsideTileY}} 1 1"
           }
         }
       ],
@@ -254,7 +254,7 @@
           "Layer": "Buildings",
           "Position": {"X": 17, "Y": 32},
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 17 31 1 1"
+            "Action": "OpenShop {{ModId}}_NormTruck down -1 -1 17 31 1 1"
           }
         }
       ],
@@ -270,7 +270,7 @@
           "Layer": "Buildings",
           "Position": {"X": 53, "Y": 54},
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 53 53 1 1"
+            "Action": "OpenShop {{ModId}}_NormTruck down -1 -1 53 53 1 1"
           }
         }
       ],
@@ -289,7 +289,7 @@
           "Layer": "Buildings",
           "Position": {"X": 52, "Y": 53},
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_NormTruck down 800 1700 52 52 1 1"
+            "Action": "OpenShop {{ModId}}_NormTruck down -1 -1 52 52 1 1"
           }
         }
       ],
