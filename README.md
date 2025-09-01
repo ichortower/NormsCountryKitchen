@@ -48,12 +48,13 @@ Norm's gift tastes:
 
 Norm's schedule:
 
-* **Tuesday**: at the truck first thing in the morning. Mans the truck from
+* **Tuesday**: at the truck first thing in the morning. Runs the shop from
   8:00 until 5:00, then visits the saloon for a few hours before returning to
   the truck.
-* **Tuesday (4+ hearts)**: at the truck first thing in the morning. Mans the
-  truck from 8:00 until 5:00, then visits one of: the saloon, the town
-  fountain, the beach's west pier, or the forest river.
+* **Tuesday (4+ hearts)**: at the truck first thing in the morning. Runs the
+  shop from 8:00 until 5:00, then visits one of: the saloon, the town
+  fountain, the beach's west pier, or the forest river. Then returns to the
+  truck.
 
 After reaching 4 hearts, he'll ask you which is your favorite among Town,
 Beach, and Forest. He'll add another spot in that location to his random
