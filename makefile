@@ -12,6 +12,7 @@ cp:
 	install -m 644 data/*.json "${MOD_DIR}/data/"
 	install -m 644 assets/*.tmx assets/*.png assets/*.ogg "${MOD_DIR}/assets/"
 	install -m 644 i18n/default/*.json "${MOD_DIR}/i18n/default/"
+	install -m 644 LICENSE "${MOD_DIR}/"
 
 uninstall:
 	rm -rf "${MOD_DIR}"
