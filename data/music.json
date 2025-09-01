@@ -25,9 +25,9 @@
           "Location": "Town",
           "MinimumBgmVolume": 0.0,
           "Radius": {
-            "Floor": 1.0,
-            "Shelf": 3.0,
-            "Maximum": 14.0
+            "Floor": 3.0,
+            "Shelf": 9.0,
+            "Maximum": 18.0
           },
           "TilePosition": { "X": "{{ShopTileX}}", "Y": "{{ShopTileY}}" }
         }
