@@ -21,6 +21,31 @@
       "Name": "Town Y",
       "Value": 65
     },
+    // where the truck parks at the stardew valley fair, years 1 and 2. like town x/y,
+    // it's the top left corner of the map patch. see data/shop.json for more math.
+    {
+      "Name": "Fair1 X",
+      "Value": 13
+    },
+    {
+      "Name": "Fair1 Y",
+      "Value": 28
+    },
+    {
+      "Name": "Fair2 X",
+      "Value": 49
+    },
+    {
+      "Name": "Fair2 Y",
+      "Value": 50
+    },
+    {
+      "Name": "Fair2 Y",
+      "Value": "{{Query:{{Fair2 Y}} - 1}}",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
     // where norm goes after closing up. at first it's just to the saloon, but he adds
     // a few spots at 4 hearts and chooses one at random.
     // after he asks you where you like to go, he adds one additional spot there to the pool.
