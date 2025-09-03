@@ -248,13 +248,21 @@
       "Target": "Maps/Town-Fair",
       "Action": "EditMap",
       "FromFile": "assets/FoodTruck.tmx",
-      "ToArea": { "X": 13, "Y": 28, "Width": 7, "Height": 5 },
+      "ToArea": {
+        "X": "{{Round:{{Fair1 X}}}}",
+        "Y": "{{Round:{{Fair1 Y}}}}",
+        "Width": 7,
+        "Height": 5
+      },
       "MapTiles": [
         {
           "Layer": "Buildings",
-          "Position": {"X": 17, "Y": 32},
+          "Position": {
+            "X": "{{Query:{{Fair1 X}} + 4}}",
+            "Y": "{{Query:{{Fair1 Y}} + 4}}"
+          },
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_NormTruck down -1 -1 17 31 1 1"
+            "Action": "OpenShop {{ModId}}_NormTruck down -1 -1 {{Query:{{Fair1 X}} + 4}} {{Query:{{Fair1 Y}} + 3}} 1 1"
           }
         }
       ],
@@ -264,39 +272,33 @@
       "Target": "Maps/Town-Fair2",
       "Action": "EditMap",
       "FromFile": "assets/FoodTruck.tmx",
-      "ToArea": { "X": 49, "Y": 50, "Width": 7, "Height": 5 },
+      "ToArea": {
+        "X": "{{Round:{{Fair2 X}}}}",
+        "Y": "{{Round:{{Fair2 Y}}}}",
+        "Width": 7,
+        "Height": 5
+      },
       "MapTiles": [
         {
           "Layer": "Buildings",
-          "Position": {"X": 53, "Y": 54},
+          "Position": {
+            "X": "{{Query:{{Fair2 X}} + 4}}",
+            "Y": "{{Query:{{Fair2 Y}} + 4}}"
+          },
           "SetProperties": {
-            "Action": "OpenShop {{ModId}}_NormTruck down -1 -1 53 53 1 1"
+            "Action": "OpenShop {{ModId}}_NormTruck down -1 -1 {{Query:{{Fair2 X}} + 4}} {{Query:{{Fair2 Y}} + 3}} 1 1"
           }
-        }
-      ],
-      "PatchMode": "Overlay",
-      "When": {
-        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
-      }
-    },
-    {
-      "Target": "Maps/Town-Fair2",
-      "Action": "EditMap",
-      "FromFile": "assets/FoodTruck.tmx",
-      "ToArea": { "X": 48, "Y": 49, "Width": 7, "Height": 5 },
-      "MapTiles": [
+        },
         {
-          "Layer": "Buildings",
-          "Position": {"X": 52, "Y": 53},
-          "SetProperties": {
-            "Action": "OpenShop {{ModId}}_NormTruck down -1 -1 52 52 1 1"
-          }
+          "Layer": "AlwaysFront",
+          "Position": {
+            "X": "{{Query:{{Fair2 X}} + 3}}",
+            "Y": "{{Query:{{Fair2 Y}} + 1}}"
+          },
+          "Remove": true
         }
       ],
-      "PatchMode": "Overlay",
-      "When": {
-        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
-      }
+      "PatchMode": "Overlay"
     },
     {
       "Target": "Data/Festivals/fall16",
@@ -309,7 +311,7 @@
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters"],
-          "Value": "{{Norm}} 17 31 down",
+          "Value": "{{Norm}} {{Query:{{Fair1 X}} + 4}} {{Query:{{Fair1 Y}} + 3}} down",
           "Delimiter": "/"
         },
         {
@@ -331,28 +333,10 @@
         {
           "Operation": "Append",
           "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
-          "Value": "{{Norm}} 53 53 down",
+          "Value": "{{Norm}} {{Query:{{Fair2 X}} + 4}} {{Query:{{Fair2 Y}} + 3}} down",
           "Delimiter": "/"
         }
-      ],
-      "When": {
-        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
-      }
-    },
-    {
-      "Target": "Data/Festivals/fall16",
-      "Action": "EditData",
-      "TextOperations": [
-        {
-          "Operation": "Append",
-          "Target": ["Entries", "Set-Up_additionalCharacters_y2"],
-          "Value": "{{Norm}} 52 52 down",
-          "Delimiter": "/"
-        }
-      ],
-      "When": {
-        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
-      }
+      ]
     }
   ]
 }
