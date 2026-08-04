@@ -1,4 +1,6 @@
 {
   "config.PlayMusic.name": "Play Music",
-  "config.PlayMusic.description": "Have Norm play music when his food truck is open. Requires Positional Audio to work."
+  "config.PlayMusic.description": "Have Norm play music when his food truck is open. Requires Positional Audio to work.",
+  "config.TruckPalette.name": "Truck Palette",
+  "config.TruckPalette.description": "Which palette to apply to the truck graphics."
 }

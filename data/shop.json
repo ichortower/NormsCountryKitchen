@@ -64,7 +64,7 @@
     {
       "Target": "Maps/{{ModId}}_Tilesheet",
       "Action": "Load",
-      "FromFile": "assets/tilesheet.png"
+      "FromFile": "assets/tilesheet_{{UseTruckPalette}}-all.png"
     },
     {
       "Target": "Maps/Town",

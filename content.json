@@ -4,6 +4,10 @@
     "PlayMusic": {
       "AllowValues": "true, false",
       "Default": true
+    },
+    "TruckPalette": {
+      "AllowValues": "Auto, Vanilla, Earthy, VPR",
+      "Default": "Auto"
     }
   },
   "DynamicTokens": [
@@ -85,6 +89,7 @@
       "Name": "FreeTimeSpot",
       "Value": "{{Random: {{FreeTimeString}}}}"
     },
+    // coordinates derived from truck location that some patches use
     {
       "Name": "DoorTileX",
       "Value": "{{Query: {{Town X}} + 1}}"
@@ -120,6 +125,34 @@
     {
       "Name": "RandomGifts",
       "Value": "[{{ModId}}_SoftPretzel {{ModId}}_WhoopiePie {{ModId}}_BirchBeer]"
+    },
+    // which palette to apply to truck tilesheet
+    {
+      "Name": "UseTruckPalette",
+      "Value": "{{TruckPalette}}"
+    },
+    {
+      "Name": "UseTruckPalette",
+      "Value": "Earthy",
+      "When": {
+          "UseTruckPalette": "Auto",
+          "HasMod": "DaisyNiko.EarthyRecolour"
+      }
+    },
+    {
+      "Name": "UseTruckPalette",
+      "Value": "VPR",
+      "When": {
+          "UseTruckPalette": "Auto",
+          "HasMod": "grapeponta.VibrantPastoralRecolor"
+      }
+    },
+    {
+      "Name": "UseTruckPalette",
+      "Value": "Vanilla",
+      "When": {
+          "UseTruckPalette": "Auto"
+      }
     }
   ],
   "Changes": [
