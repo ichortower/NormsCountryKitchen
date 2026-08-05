@@ -25,6 +25,20 @@
       "Name": "Town Y",
       "Value": 65
     },
+    {
+      "Name": "Town X",
+      "Value": 6,
+      "When": {
+        "HasMod |contains=handwrittenhello.dbda": true
+      }
+    },
+    {
+      "Name": "Town Y",
+      "Value": 54,
+      "When": {
+        "HasMod |contains=handwrittenhello.dbda": true
+      }
+    },
     // where the truck parks at the stardew valley fair, years 1 and 2. like town x/y,
     // it's the top left corner of the map patch. see data/shop.json for more math.
     {
