@@ -10,7 +10,7 @@ WHISK=../Pancake/whisk
 install: cp
 
 palettes:
-	"${WHISK}" assets/tilesheet.png Earthy-all VPR-all | "${PANCAKE}" assets/tilesheet.png -i assets
+	"${WHISK}" assets/tilesheet.png Earthy-all VPR-all Seaside-all | "${PANCAKE}" assets/tilesheet.png -i assets
 	cp assets/tilesheet.png assets/tilesheet_Vanilla-all.png
 
 cp:

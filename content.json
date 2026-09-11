@@ -6,7 +6,7 @@
       "Default": true
     },
     "TruckPalette": {
-      "AllowValues": "Auto, Vanilla, Earthy, VPR",
+      "AllowValues": "Auto, Vanilla, Earthy, VPR, Seaside",
       "Default": "Auto"
     }
   },
@@ -159,6 +159,14 @@
       "When": {
           "UseTruckPalette": "Auto",
           "HasMod": "grapeponta.VibrantPastoralRecolor"
+      }
+    },
+    {
+      "Name": "UseTruckPalette",
+      "Value": "Seaside",
+      "When": {
+          "UseTruckPalette": "Auto",
+          "HasMod": "rainkius.SeasideValley"
       }
     },
     {
